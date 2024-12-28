@@ -1,0 +1,35 @@
+/*================ TOPOGRAFIA =====================*/
+.heading-md {
+  font: 700 1.75rem/auto var(--font-family-baloo2);
+}
+
+.heading-sm {
+  font: 700 1.125rem/auto var(--font-family-baloo2);
+}
+
+.body-md {
+  font: 400 1rem/auto var(--font-family-opensans);
+}
+
+.body-md {
+  font: 400 .875rem/auto var(--font-family-opensans);
+}
+
+.body-md {
+  font: 400 .75/auto var(--font-family-opensans);
+}
+
+/*=================== CORES =================*/
+
+.brand-light {
+  color: #59B2FF;
+} 
+
+.brand-mid {
+  color: #3487CF;
+}
+
+.brand-drak {
+  color: #1D6FB6;
+}
+

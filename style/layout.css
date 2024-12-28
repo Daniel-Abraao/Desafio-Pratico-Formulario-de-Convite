@@ -1,0 +1,28 @@
+#app {
+  display: grid;
+  grid-template-columns: 26% auto;
+  height: 100vh;
+  overflow: hidden;
+  padding: 1.25rem;
+  gap: 1.25rem;
+  background-color: var(--shape-background);
+}
+
+main {
+  overflow: auto;
+  border-radius: .75rem;
+  background-color: var(--shape-body);
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+aside {
+  border-radius: .75rem;
+  background-color: var(--shape-body);
+  background-image: url(../assets/Background.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  grid-column: 1/2;
+}
+

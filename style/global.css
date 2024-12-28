@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+:root {
+  /*======================== TOPGRAFIA ==========================*/
+  --font-family-leckerli: "Leckerli One", sans-serif;
+  --font-family-baloo2: "Baloo 2", sans-serif;
+  --font-family-opensans: "Open Sans", sans-serif;
+
+  /*========================= CORES ============================*/
+  --text-body: #c8cdd0;
+  --text-heading: #F9F9F9;
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2d3136;
+  --shape-hover: #383d42;
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
+}
