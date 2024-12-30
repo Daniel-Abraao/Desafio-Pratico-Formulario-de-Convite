@@ -2,21 +2,18 @@
 <html lang="pt-br">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fomulário de Convite</title>
     <link rel="stylesheet" href="style/index.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -27,14 +24,76 @@
   <body>
     <div id="app">
       <main>
-        <div>
-      
-        
+        <div class="stripe-background">
+          <form>
+            <h1 class="color-text-heading heading-md">
+              Crie seu convinte
+            </h1>
+            <div class="wrapper">
+              <fieldset class="about-event">
+                <legend>
+                  <img src="assets/icons/calendar.svg" alt="">
+                  <span class=" color-text-heading heading-sm">Sobre o evento</span>
+                </legend>
+
+                <div class="input-wrapper">
+                  <label for="event-name">Título</label>
+                  <input type="text" id="event-name" name="event-name" placeholder="Nome do Evento">
+                </div>
+
+                <div class="input-wrapper">
+                  <div class=" grid grid-auto-coluns gap-1">
+                    <div>
+                      <label for="date-start">Ínicio</label>
+                      <input type="datetime-local" id="date-start" name="date-start">
+                    </div>
+                    <div>
+                      <label for="date-end">Fim</label>
+                      <input type="datetime-local" id="date-end" name="date-end">
+                    </div>
+                  </div>  
+                </div>
+
+                <div class="input-wrapper">
+                  <div class=" grid grid-auto-coluns gap-1">
+                    <div>
+                      <label>Tipo</label>
+                      <div class="model-radio">
+                        <div class="radio-grid">
+                          <input type="radio" name="model" id="">
+                          <div class="radio-img-presecial"></div>
+                          <div>Presencial</div>
+                        </div>
+                        <div class="radio-grid">
+                          <input type="radio" name="model" id="">
+                          <div class="radio-img-oline"></div>
+                          <div>Oline</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label>Local</label>
+                      <input type="text"  name="local" placeholder="Link ou Endereço">
+                    </div>
+                  </div>  
+                </div>
+
+                
+    
+    
+              </fieldset>
+            </div>
+            
+          </form>
         </div>
       </main>
 
       <aside>
-        
+        <img src="assets/Logo.svg" alt="" />
+        <h1>Festive</h1>
+        <h2 class="body-md-lighter color-text-heading">
+          Crie um convinte digital para seu evento
+        </h2>
       </aside>
     </div>
   </body>

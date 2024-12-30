@@ -1,0 +1,141 @@
+.wrapper {
+  margin-top: 2.5rem;
+  
+
+  fieldset {
+    border: none;
+  }
+  legend {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  span {
+    font: 400 1rem var(--font-family-opensans);
+    color: var(--input-placeholder);
+  }
+}
+
+input, textarea, radio {
+  appearance: none;
+  width:  100%;
+  border-radius: .5rem;
+  border: 2px solid transparent;
+  outline: 1px solid var(--input-stroke);
+  background-color: rgba(28, 31, 33, 0.3);
+  padding: .75rem 1rem;
+  font: 400 1rem var(--font-family-opensans);
+  color: var(--input-placeholder);
+}
+
+input[type="datetime-local"] {
+  position: relative;
+  color: var(--input-placeholder);
+  
+  &::-webkit-calendar-picker-indicator {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .75rem;
+  font: 400 .875rem var(--font-family-opensans);
+  color: var(--text-body);
+}
+
+input::placeholder {
+  font: 400 1rem var(--font-family-opensans);
+  color: var(--input-placeholder);
+}
+
+.input-wrapper {
+  margin-bottom: 1rem;
+}
+
+
+
+.model-radio {
+  display: grid;
+  grid-template-columns: auto auto;
+  outline: 1px solid var(--input-stroke);
+  background-color: rgba(28, 31, 33, 0.3);
+  height: 59px;
+  border-radius: 10px;
+  font: 400 14px var(--font-family-opensans);
+  color: var(--text-body);
+  padding: 5px;
+
+  
+
+  .radio-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 10px;
+    border-radius: 10px;
+
+    input {
+      appearance: none;
+      background-color: none;
+      outline: none;
+      position: absolute;
+      height: 100%;
+    }
+
+    
+  }
+
+  .radio-img-presecial {
+    width: 25px;
+    height: 25px;
+    background-image: url(../../assets/icons/building-2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .radio-img-oline {
+    width: 25px;
+    height: 25px;
+    background-image: url(../../assets/icons/video-1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .radio-grid:has(:checked) {
+    font: 600 14px var(--font-family-opensans);
+    color: var(--text-heading);
+    background-color: var(--shape-hover);
+  
+  }
+
+  .radio-grid:has(:checked) {
+    
+    .radio-img-presecial {
+      background-image: url(../../assets/icons/building-hover.svg);
+    }
+
+    .radio-img-oline {
+      background-image: url(../../assets/icons/video-hover.svg);
+    }
+  }
+  
+
+  
+
+
+}
+
+
+
+
+
+
+

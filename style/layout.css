@@ -1,3 +1,5 @@
+@import url(fieldset/index.css);
+
 #app {
   display: grid;
   grid-template-columns: 26% auto;
@@ -6,23 +8,61 @@
   padding: 1.25rem;
   gap: 1.25rem;
   background-color: var(--shape-background);
+
+  main {
+    overflow: auto;
+    border-radius: .75rem;
+    padding-inline: 8.125rem;
+    background-color: var(--shape-body);
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    form {
+      padding-block: 5rem;
+    }
+  
+    .stripe-background {
+      height: 100%;
+      background: repeating-linear-gradient(
+      90deg,
+      #302023,
+      #302023 4%,
+      transparent 4%,
+      transparent 6%
+      );
+      
+    }
+  }
+  
+  aside {
+    padding: 2rem;
+    border-radius: .75rem;
+    background-color: var(--shape-body);
+    background-image: url(../assets/Background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/2;
+  
+    img {
+      width: 46px;
+      margin-bottom: 1rem;
+    }
+  
+    h1 {
+      font: normal 2.5rem "Leckerli One", sans-serif;
+      color: #FF598B;
+      margin-bottom: .25rem;
+  
+    }     
+  
+    h2 {
+      font-weight: lighter;
+    }
+  }
 }
 
-main {
-  overflow: auto;
-  border-radius: .75rem;
-  background-color: var(--shape-body);
-  grid-column: 2/3;
-  grid-row: 1/2;
-}
 
-aside {
-  border-radius: .75rem;
-  background-color: var(--shape-body);
-  background-image: url(../assets/Background.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  grid-column: 1/2;
-}
+
+
 
